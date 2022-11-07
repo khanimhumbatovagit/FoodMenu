@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <select id="menu" class="menu">
+            <li><a href="#" id="drinks">Drinks</a></li>
+            <li><a href="#" id="entrees">Entrees</a></li>
+            <li><a href="#" id="dessert">Desserts</a></li>
+        </div>
+    </div>
+
+
+
+    <script>
+
+
+
+        window.onload = function () {
+            let menu = {
+                drinks: [
+                    "Water", "Tea", "Sweet Tea",
+                    "Coke", "Dr. Pepper", "Sprite"
+                ],
+                entrees: [
+                    "Hamburger w/ Fries",
+                    "Grilled Cheese w/ Tater Tots",
+                    "Grilled Chicken w/ Veggies",
+                    "Chicken Fried Steak w/ Mashed Potatoes",
+                    "Fried Shrimp w/ Coleslaw",
+                    "Veggie Plate"
+                ],
+                desserts: [
+                    "Cheesecake", "Chocolate Cake", "Snickerdoodle Cookie"
+                ]
+            };
+
+
+            const foodMenu =  document.getElementById('menu');
+
+            let length = me.length;
+            for (let i = 0; i < length; i++) {
+                //create the option element
+                 //const theOption = document.createElement('option');
+                const theOption = new Option(menu[i]);
+                //set the text and the value attribute of the option tag you created
+                // theOption.textContent = states[i];
+                // theOption.value = abbreviations[i];
+
+                //append the option tag as a child of the select tag
+
+            }
+        }
+    </script>
+</body>
+
+</html>
